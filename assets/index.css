@@ -1,0 +1,40 @@
+body {
+  padding: 20px;
+  background-color: #161925;
+  color: #cbf7ed;
+}
+.me {
+  width: 200px;
+  border-radius: 50%;
+}
+.block-info {
+  display: flex;
+  justify-content: space-between;
+}
+.rating {
+  display: inline-flex;
+  margin-left: 20px;
+}
+.rating span {
+  width: 10px;
+  height: 10px;
+  display: block;
+  background-color: #406e8e;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+h1,
+h2 {
+  color: #8ea8c3;
+}
+ul,li{
+    display:block ;
+}
+ul{
+    width: 300px;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
