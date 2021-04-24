@@ -1,5 +1,6 @@
 body {
-  padding: 20px;
+  padding: 0px;
+  margin: 0;
   background-color: #161925;
   color: #cbf7ed;
 }
@@ -10,6 +11,15 @@ body {
 .block-info {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 650px) {
+  .block-info {
+    display: block;
+  }
+  .me  {
+    display:block;
+    margin: auto;
+  }
 }
 .rating {
   display: inline-flex;
@@ -32,9 +42,55 @@ ul,li{
 }
 ul{
     width: 300px;
+    padding: 0;
 }
 li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.game-grid {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 304px 1fr; */
+  /* column-gap: 10px; */
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.game-column {
+  /* width: calc(60% - 304px); */
+  height: 100vh;
+  flex: 1 1 auto;
+}
+.game-column button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  height: 50%;
+  width: 100%;
+}
+#game {
+  height: 304px!important;
+  width: 304px!important;
+}
+#modal {
+  position:fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed black;
+  background-color: gray;
+  color: wheat;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+@media (min-width: 400px) {
+  #modal {
+    display: none;
+  }
 }
